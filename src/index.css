@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(./colorSheet.css);
+
+:root {
+  --primaryColor:#f9fafb;
+  --secondaryColor:#202121;
+  --primaryFont:400 'lato'
+  --secondaryFont: 300 'open sans'
+}
+/* sets the default margin and padding to 0px for all elements on the screen */
+* {
+  margin:0px;
+  padding:0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  width: 100%;
+  height:100vh;
 }
+
+nav {
+  width:100%;
+  height: 65px;
+  display: block;
+}
+
+nav .navContent {
+  width:100%;
+  display: flex;
+  margin: 0px auto;
+  height: 55px;
+  padding:5px 65px;
+  max-width:1070px;
+}
+
+section.homepage {
+  width: 100%;
+  margin: 0px auto;
+  max-width:1200px;
+  height: calc(100vh - 110px);
+}
+
+article.homepageLeft {
+  width: calc(100% / 3 * 2);
+  float: left;
+}
+
+article.homepageLeft img {
+  width:100%;
+}
+
+article.homepageRight {
+  width: calc(100% / 3);
+  float: left;
+}
+
+footer {
+  width: 100%;
+  height: 45px;
+}
+
+footer .footerContent { 
+  width: 100%;
+  margin:0px auto;
+  max-width: 1200px;
+}
+
