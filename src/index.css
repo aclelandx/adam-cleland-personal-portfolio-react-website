@@ -1,10 +1,20 @@
 @import url(./colorSheet.css);
 
 :root {
-  --primaryColor:#f9fafb;
-  --secondaryColor:#202121;
-  --primaryFont:400 'lato'
-  --secondaryFont: 300 'open sans'
+  --largeTitleFont:900 32px/32px 'lato';
+  --bodyCopyFont:400 14px/14px 'lato';
+  --navFont:400 19px/19px 'lato';
+  --thinTitleFont: 300 28px/28px 'open sans';
+  --white:#f9fafb;
+  --black:#202121;
+  --yellowLight:#fff7e1;
+  --yellowDark:#ffd54c;
+  --blueLight:#d1e6f7;
+  --blueDark:#40b1e5;
+  --redLight:#fddbd1;
+  --primaryColor:var(--yellowLight);
+  --secondaryColor:var(--redLight);
+  --ternaryColor:var(--yellowDark);
 }
 /* sets the default margin and padding to 0px for all elements on the screen */
 * {
@@ -15,27 +25,19 @@
 main {
   width: 100%;
   height:100vh;
+  background-color: var(--primaryColor);
 }
 
-nav {
-  width:100%;
-  height: 65px;
-  display: block;
-}
-
-nav .navContent {
-  width:100%;
-  display: flex;
-  margin: 0px auto;
-  height: 55px;
-  padding:5px 65px;
-  max-width:1070px;
-}
+/*  Homepage Section Begins */
 
 section.homepage {
   width: 100%;
   height: calc(100vh - 110px);
+  margin:0px auto;
+  max-width:1440px;
 }
+
+/* Homepage left section begins */
 
 article.homepageLeft {
   width: calc(100% / 3 * 2);
@@ -43,29 +45,107 @@ article.homepageLeft {
   position: relative;
   float: left;
   background-color: var(--primaryColor);
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-  align-items: center;
   overflow: hidden;
-
 }
 
-article.homepageLeft img {
-  flex: 0 0 auto;
+section.hero {
+  width: 100%;
+  max-width: calc(1200px / 3 * 2);
+  height: 100%;
+}
+
+section.hero h1 {
+  writing-mode: vertical-lr;
+  font: var(--largeTitleFont);
+  letter-spacing: .1em;
+  font-size: 45pt;
+  line-height: 50pt;
+  height:100%;
+  text-align: center;
+  text-orientation: mixed;
+}
+
+article.homepageLeft .heroImage {
   width:100%;
   margin:0px auto;
   min-width: 700px;
+  max-width: 1000px;
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.25));
+  z-index: 10;
+  position: absolute;
+  bottom: 0px;
+  
 }
+
+article.homepageLeft .backgroundLogo {
+  position: absolute;
+  width: 400px;
+  z-index: 9;
+  position: absolute;
+  left: 65px;
+  top:65px;
+  opacity: .2;
+}
+
+/* Stylization for the right side of the homepage begins */
 
 article.homepageRight {
   width: calc(100% / 3);
   float: left;
+  padding: 0px;
+  position: relative;
+  height: 100%;
+  background-color: var(--ternaryColor);
 }
+
+article.homepageRight {
+
+}
+
+/* Stylization for the header begins. */
+
+header {
+  width:100%;
+  background-color: var(--secondaryColor);
+}
+
+nav {
+  width:calc(100% - 130px);
+  height: 65px;
+  display: flex;
+  max-width: 1440px;
+  padding:0px 65px;
+  margin:0px auto;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+nav img {
+  height: 45px;
+  padding-right:65px;
+}
+
+nav a {
+  height:19px;
+  font: var(--navFont);
+  text-decoration: none;
+  padding: 23px 20px;
+  transition: .25s ease-in-out;
+}
+
+nav a:hover {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  transition: .25s ease-in-out;
+}
+
+/* Stylization for the footer begins */
 
 footer {
   width: 100%;
   height: 45px;
+  background-color: var(--secondaryColor);
+  text-align: center;
 }
 
 footer .footerContent { 

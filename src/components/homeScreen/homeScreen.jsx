@@ -1,13 +1,15 @@
-import profilePicture from '../../images/me.png'
 import AboutMe from './aboutMe/aboutMe'
+import HeroSection from './heroSection/heroSection'
 
 function HomeScreen() {
     return (
         <section className="homepage">
             <article className='homepageLeft'>
-                <img src={profilePicture} alt="Adam Cleland Web Developer" />
+                <HeroSection />
             </article>
-            <AboutMe />
+            <article className='homepageRight'>
+                <AboutMe />
+            </article>
         </section>
     )
 };

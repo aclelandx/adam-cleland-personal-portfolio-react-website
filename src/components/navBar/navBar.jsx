@@ -1,17 +1,17 @@
 import NavButton from "./navBarButton"
+import AdamLogo from "../homeScreen/myLogo"
 
-function NavBar ({gotoHome, gotoProjects, gotoContact, gotoResume}){
+function NavBar (){
     return(
-        <nav>
-            {/* <NavButton content='Home' action={gotoHome} />
-            <NavButton content='Projects' action={gotoProjects} />
-            <NavButton content='Contact Me' action={gotoContact} />
-            <NavButton content='Resume' action={gotoResume} /> */}
-
-            <NavButton content='Home'destination='/'>
-
-            </NavButton>
-        </nav>
+        <header>
+            <nav>
+                <AdamLogo />
+                <NavButton content='Home'destination='/'></NavButton>
+                <NavButton content='Projects'destination='/projects'></NavButton>
+                <NavButton content='Contact'destination='/contact'></NavButton>
+                <NavButton content='Resume'destination='/resume'></NavButton>
+            </nav>
+        </header>
     )
 }
 
