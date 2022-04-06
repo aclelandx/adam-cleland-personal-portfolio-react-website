@@ -11,15 +11,16 @@ function App() {
 
   return (
     <Router>
-      <section className='activePage'>
+      <main>
         <NavBar />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactMePage />} />
+          <Route path="/resume" element={<ContactMePage />} />
         </Routes>
         <Footer />
-      </section>
+      </main>
     </Router>
   );
 }

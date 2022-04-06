@@ -34,18 +34,28 @@ nav .navContent {
 
 section.homepage {
   width: 100%;
-  margin: 0px auto;
-  max-width:1200px;
   height: calc(100vh - 110px);
 }
 
 article.homepageLeft {
   width: calc(100% / 3 * 2);
+  height: 100%;
+  position: relative;
   float: left;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+
 }
 
 article.homepageLeft img {
+  flex: 0 0 auto;
   width:100%;
+  margin:0px auto;
+  min-width: 700px;
 }
 
 article.homepageRight {
