@@ -6,10 +6,10 @@ function NavBar () {
         <header>
             <nav>
                 <AdamLogo />
-                <NavButton content='Home'destination='/'></NavButton>
-                <NavButton content='Projects'destination='/projects'></NavButton>
-                <NavButton content='Contact'destination='/contact'></NavButton>
-                <NavButton content='Resume'destination='/resume'></NavButton>
+                <NavButton content='Home'destination='/adam-cleland-personal-portfolio-react-website/'></NavButton>
+                <NavButton content='Projects'destination='/adam-cleland-personal-portfolio-react-website/projects'></NavButton>
+                <NavButton content='Contact'destination='/adam-cleland-personal-portfolio-react-website/contact'></NavButton>
+                <NavButton content='Resume'destination='/adam-cleland-personal-portfolio-react-website/resume'></NavButton>
             </nav>
         </header>
     )
