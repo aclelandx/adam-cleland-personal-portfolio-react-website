@@ -6,10 +6,10 @@ function NavBar () {
         <header>
             <nav>
                 <AdamLogo />
-                <NavButton content='Home'destination='/'></NavButton>
-                <NavButton content='Projects'destination='/projects'></NavButton>
-                <NavButton content='Contact'destination='/contact'></NavButton>
-                <NavButton content='Resume'destination='/resume'></NavButton>
+                <NavButton content='Home'destination='./'></NavButton>
+                <NavButton content='Projects'destination='./projects'></NavButton>
+                <NavButton content='Contact'destination='./contact'></NavButton>
+                <NavButton content='Resume'destination='./resume'></NavButton>
             </nav>
         </header>
     )
