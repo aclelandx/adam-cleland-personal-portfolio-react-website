@@ -21,7 +21,7 @@ I hope you enjoy!
 ---
 
 The site is launched via github pages,
-[Click Me For Live Site](https://aclelandx.github.io/adam-cleland-personal-portdolio-react-website)
+[Click Me For Live Site](https://aclelandx.github.io/)
 
 ## ScreenShots
 
