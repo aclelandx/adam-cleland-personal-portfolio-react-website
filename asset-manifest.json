@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/adam-cleland-personal-portfolio-react-website/static/css/main.1bb0fd40.css",
-    "main.js": "/adam-cleland-personal-portfolio-react-website/static/js/main.5584c59c.js",
-    "static/js/787.164346b9.chunk.js": "/adam-cleland-personal-portfolio-react-website/static/js/787.164346b9.chunk.js",
-    "static/media/TimedCodingQuizScreenshot.png": "/adam-cleland-personal-portfolio-react-website/static/media/TimedCodingQuizScreenshot.18d6c9e3c425d7fee2ea.png",
-    "static/media/me.png": "/adam-cleland-personal-portfolio-react-website/static/media/me.d2ff9c98c10376d3dfb3.png",
-    "static/media/DayPlannerPhoto.png": "/adam-cleland-personal-portfolio-react-website/static/media/DayPlannerPhoto.fa28aaae418e9145ec97.png",
-    "static/media/adam-cleland-resume.pdf": "/adam-cleland-personal-portfolio-react-website/static/media/adam-cleland-resume.2f9d439095217ca93f70.pdf",
-    "static/media/GroupProject1OrbitalDictionary.png": "/adam-cleland-personal-portfolio-react-website/static/media/GroupProject1OrbitalDictionary.5e2733cc1bab619e5f5a.png",
-    "static/media/cmsLogo.svg": "/adam-cleland-personal-portfolio-react-website/static/media/cmsLogo.df6d8f108cdcec590bd9b394b25ac22d.svg",
-    "static/media/familyReconnect.svg": "/adam-cleland-personal-portfolio-react-website/static/media/familyReconnect.2720e077dcd7db929da11e941231adb2.svg",
-    "static/media/email-icon.svg": "/adam-cleland-personal-portfolio-react-website/static/media/email-icon.7747b1926490644a6550cfd440975fb5.svg",
-    "static/media/github-icon.svg": "/adam-cleland-personal-portfolio-react-website/static/media/github-icon.edd490b9663acff7d5fed4bb8319d9d5.svg",
-    "static/media/resume-icon.svg": "/adam-cleland-personal-portfolio-react-website/static/media/resume-icon.6e62f7a4f9efb1c879e7664371edfab3.svg",
-    "static/media/cell-phone-icon.svg": "/adam-cleland-personal-portfolio-react-website/static/media/cell-phone-icon.8e2742836ac84c4da061a4b8466f0e39.svg",
-    "static/media/linked-in-icon.svg": "/adam-cleland-personal-portfolio-react-website/static/media/linked-in-icon.d96a0ba8aeab5c36c28d0c7db4cf2576.svg",
-    "static/media/noteTaker.svg": "/adam-cleland-personal-portfolio-react-website/static/media/noteTaker.8b3758a4118b89d04dcd60aa76739372.svg",
-    "index.html": "/adam-cleland-personal-portfolio-react-website/index.html",
-    "static/media/logo-black.svg": "/adam-cleland-personal-portfolio-react-website/static/media/logo-black.694b5258e55336971c51adbd0e531be9.svg",
-    "main.1bb0fd40.css.map": "/adam-cleland-personal-portfolio-react-website/static/css/main.1bb0fd40.css.map",
-    "main.5584c59c.js.map": "/adam-cleland-personal-portfolio-react-website/static/js/main.5584c59c.js.map",
-    "787.164346b9.chunk.js.map": "/adam-cleland-personal-portfolio-react-website/static/js/787.164346b9.chunk.js.map"
+    "main.css": "/static/css/main.1bb0fd40.css",
+    "main.js": "/static/js/main.bb449253.js",
+    "static/js/787.164346b9.chunk.js": "/static/js/787.164346b9.chunk.js",
+    "static/media/TimedCodingQuizScreenshot.png": "/static/media/TimedCodingQuizScreenshot.18d6c9e3c425d7fee2ea.png",
+    "static/media/me.png": "/static/media/me.d2ff9c98c10376d3dfb3.png",
+    "static/media/DayPlannerPhoto.png": "/static/media/DayPlannerPhoto.fa28aaae418e9145ec97.png",
+    "static/media/adam-cleland-resume.pdf": "/static/media/adam-cleland-resume.2f9d439095217ca93f70.pdf",
+    "static/media/GroupProject1OrbitalDictionary.png": "/static/media/GroupProject1OrbitalDictionary.5e2733cc1bab619e5f5a.png",
+    "static/media/cmsLogo.svg": "/static/media/cmsLogo.df6d8f108cdcec590bd9b394b25ac22d.svg",
+    "static/media/familyReconnect.svg": "/static/media/familyReconnect.2720e077dcd7db929da11e941231adb2.svg",
+    "static/media/email-icon.svg": "/static/media/email-icon.7747b1926490644a6550cfd440975fb5.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.edd490b9663acff7d5fed4bb8319d9d5.svg",
+    "static/media/resume-icon.svg": "/static/media/resume-icon.6e62f7a4f9efb1c879e7664371edfab3.svg",
+    "static/media/cell-phone-icon.svg": "/static/media/cell-phone-icon.8e2742836ac84c4da061a4b8466f0e39.svg",
+    "static/media/linked-in-icon.svg": "/static/media/linked-in-icon.d96a0ba8aeab5c36c28d0c7db4cf2576.svg",
+    "static/media/noteTaker.svg": "/static/media/noteTaker.8b3758a4118b89d04dcd60aa76739372.svg",
+    "index.html": "/index.html",
+    "static/media/logo-black.svg": "/static/media/logo-black.694b5258e55336971c51adbd0e531be9.svg",
+    "main.1bb0fd40.css.map": "/static/css/main.1bb0fd40.css.map",
+    "main.bb449253.js.map": "/static/js/main.bb449253.js.map",
+    "787.164346b9.chunk.js.map": "/static/js/787.164346b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb0fd40.css",
-    "static/js/main.5584c59c.js"
+    "static/js/main.bb449253.js"
   ]
 }
