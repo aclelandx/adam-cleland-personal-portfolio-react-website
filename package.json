@@ -2,7 +2,7 @@
   "name": "adam-cleland-personal-portfolio-react-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aclelandx.github.io/adam-cleland-personal-portfolio-react-website",
+  "homepage": "https://aclelandx.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
