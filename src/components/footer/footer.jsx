@@ -4,7 +4,8 @@ function Footer(){
     return (
         <footer>
             <ul>
-                <li><a href="https://github.com/aclelandx" target='_blank'>MY GITHUB</a></li>
+                <li>Website Designed and Developed by: Adam Cleland</li>
+                <li><a href="https://github.com/aclelandx" target='_blank' rel="noreferrer">MY GITHUB</a></li>
             </ul>
         </footer>
     )

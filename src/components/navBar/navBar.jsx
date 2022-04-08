@@ -1,7 +1,7 @@
 import NavButton from "./navBarButton"
 import AdamLogo from "../homeScreen/myLogo"
 
-function NavBar (){
+function NavBar () {
     return(
         <header>
             <nav>

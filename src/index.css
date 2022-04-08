@@ -2,21 +2,28 @@
 
 :root {
   --largeTitleFont:900 32px/32px 'lato';
-  --bodyCopyFont:400 14px/14px 'lato';
+  --bodyCopyFont:400 16pt/20pt 'lato';
   --navFont:400 19px/19px 'lato';
-  --thinTitleFont: 300 28px/28px 'open sans';
+  --subHeaderFont:900 22pt/24pt 'open sans';
+  --thinTitleFont: 300 22px/22px 'open sans';
   --white:#f9fafb;
   --black:#202121;
+  --offWhite:#f1f1f1;
   --yellowLight:#fff7e1;
   --yellowDark:#ffd54c;
   --blueLight:#d1e6f7;
   --blueDark:#40b1e5;
   --redLight:#fddbd1;
-  --primaryColor:var(--yellowLight);
-  --secondaryColor:var(--redLight);
-  --ternaryColor:var(--yellowDark);
+  --boldRed:#ee4f34;
+  --offCream:#fceddb;
+  --primaryColor:var(--white);
+  --secondaryColor:var(--boldRed);
+  --ternaryColor:var(--redLight);
+  --quaternaryColor:var(--offWhite);
 }
+
 /* sets the default margin and padding to 0px for all elements on the screen */
+
 * {
   margin:0px;
   padding:0px;
@@ -34,7 +41,6 @@ section.homepage {
   width: 100%;
   height: calc(100vh - 110px);
   margin:0px auto;
-  max-width:1440px;
 }
 
 /* Homepage left section begins */
@@ -50,19 +56,22 @@ article.homepageLeft {
 
 section.hero {
   width: 100%;
-  max-width: calc(1200px / 3 * 2);
   height: 100%;
 }
 
 section.hero h1 {
-  writing-mode: vertical-lr;
-  font: var(--largeTitleFont);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font: var(--subHeaderFont);
   letter-spacing: .1em;
-  font-size: 45pt;
+  font-size: 46pt;
   line-height: 50pt;
   height:100%;
   text-align: center;
   text-orientation: mixed;
+  position: absolute;
+  right: 0px;
+  color: var(--secondaryColor);
 }
 
 article.homepageLeft .heroImage {
@@ -84,7 +93,7 @@ article.homepageLeft .backgroundLogo {
   position: absolute;
   left: 65px;
   top:65px;
-  opacity: .2;
+  opacity: .1;
 }
 
 /* Stylization for the right side of the homepage begins */
@@ -98,8 +107,34 @@ article.homepageRight {
   background-color: var(--ternaryColor);
 }
 
-article.homepageRight {
+article.homepageRight .aboutMe {
+  max-width: calc(1440px / 3);
+  width: calc(100% - 45px);
+  margin-left: 45px;
+  height: 100%;
+}
 
+.aboutMe h2 {
+  font:var(--subHeaderFont);
+  text-align: right;
+  letter-spacing: .1em;
+  margin-top:45px;
+  color: var(--secondaryColor);
+}
+
+.aboutMe p {
+  font: var(--bodyCopyFont);
+  text-align: right;
+  width:85%;
+  margin-left:15%;
+}
+
+.aboutMe hr {
+  border: none;
+  height: 2px;
+  width:85%;
+  background-color: var(--secondaryColor);
+  margin: 25px 0px 25px 15%;
 }
 
 /* Stylization for the header begins. */
@@ -107,6 +142,8 @@ article.homepageRight {
 header {
   width:100%;
   background-color: var(--secondaryColor);
+  filter: drop-shadow(0px 2px 3px);
+  z-index: 11;
 }
 
 nav {
@@ -123,6 +160,7 @@ nav {
 nav img {
   height: 45px;
   padding-right:65px;
+  filter: invert();
 }
 
 nav a {
@@ -131,9 +169,16 @@ nav a {
   text-decoration: none;
   padding: 23px 20px;
   transition: .25s ease-in-out;
+  color: var(--primaryColor);
 }
 
 nav a:hover {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  transition: .25s ease-in-out;
+}
+
+nav a.activePage {
   background-color: var(--primaryColor);
   color: var(--secondaryColor);
   transition: .25s ease-in-out;
@@ -146,11 +191,252 @@ footer {
   height: 45px;
   background-color: var(--secondaryColor);
   text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-footer .footerContent { 
+footer ul {
+  list-style: none;
+  display: block;
+}
+
+footer ul li {
+  display: inline-block;
+  font: var(--bodyCopyFont);
+  color: var(--primaryColor);
+  font-size: 12pt;
+  padding:0px 12px;
+}
+
+footer a {
+  color: var(--primaryColor);
+  font: var(--bodyCopyFont);
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+/* Stylization for the project page begins */
+
+section.projectPage {
+  padding:2px;
+  width: calc(100% - 4px);
+  height: calc(100vh - 114px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 2px;
+}
+
+section.projectPage figure {
+  flex: 0 0 auto;
+  width: calc(100% / 3 - 2px);
+  height: calc(50% - 2px);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+figure .projectBio {
+  width:100%;
+  height: 100%;
+  background-color: rgba(238,79,52,0.8);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: .25s ease-in-out;
+  opacity: 0;
+}
+
+figure .projectBio:hover {
+  opacity: 1;
+  transition: .25s ease-in-out;
+}
+
+.projectBio h4 {
+  font: var(--subHeaderFont);
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  letter-spacing: .065em;
+  padding: 2.5px 0px;
+}
+
+.projectBio h5 {
+  font: var(--thinTitleFont);
+  letter-spacing: .045em;
+  color: var(--primaryColor);
+}
+
+.projectBio hr {
+  width: 40%;
+  border: none;
+  height:2px;
+  background-color: var(--primaryColor);
+  margin:15px 0px;
+}
+
+.projectBio .projectLinks {
   width: 100%;
-  margin:0px auto;
-  max-width: 1200px;
+  height: 25px;
+  padding:15px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
 }
 
+.projectLinks a {
+  height: 25px;
+  font: var(--bodyCopyFont);
+  font-size: 17px;
+  line-height: 25px;
+  padding:4px 8px;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+  background-color: var(--primaryColor);
+  display: block;
+}
+
+/* Stylization for the contact page begins */
+
+section.contactMePage {
+  width: 100%;
+  height:calc(100vh - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px auto;
+}
+
+section.contactMePage article.contactTile {
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+}
+
+article.contactTile:nth-of-type(1),
+article.contactTile:nth-of-type(3) {
+  background-color: var(--quaternaryColor);
+}
+
+article.contactTile img {
+  width:65%;
+}
+
+article.contactTile h4 {
+  font: var(--thinTitleFont);
+}
+
+article.contactTile a {
+  font: var(--largeTitleFont);
+  letter-spacing: .065em;
+  text-transform: uppercase;
+  font-size: 18pt;
+  line-height: 18pt;
+  padding:7px 12px;
+  border: 1px solid var(--secondaryColor);
+  display: block;
+  text-decoration: none;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  transition: .25s ease-in-out;
+}
+
+article.contactTile a:hover {
+  transition: .25s ease-in-out;
+  background-color: var(--quaternaryColor);
+  color: var(--secondaryColor);
+  border-radius: 4px;
+}
+
+article.contactTile p {
+  font:var(--largeTitleFont);
+  font-size: 18pt;
+  line-height: 18pt;
+  padding: 7px 12px;
+}
+
+/* Stylization for the resume page begins */
+
+section.resumePage {
+  width: 100%;
+  height:calc(100vh - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article.resumeContent {
+  height: calc(100vh - 110px);
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  gap: 20px;
+}
+
+article.resumeContent img {
+  width: 45%;
+  display: block;
+}
+
+article.resumeContent hr {
+  width: 65%;
+  border: none;
+  height: 2px;
+  background-color: var(--secondaryColor);
+}
+
+article.resumeContent span {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+article.resumeContent h4 {
+  font: var(--subHeaderFont);
+}
+
+article.resumeContent p {
+
+}
+
+article.resumeContent a {
+  font: var(--largeTitleFont);
+  letter-spacing: .065em;
+  text-transform: uppercase;
+  font-size: 18pt;
+  line-height: 18pt;
+  padding:7px 12px;
+  border: 1px solid var(--secondaryColor);
+  display: block;
+  text-decoration: none;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  transition: .25s ease-in-out;
+  width:45%;
+  text-align: center;
+}
+
+article.resumeContent a:hover {
+  transition: .25s ease-in-out;
+  background-color: var(--quaternaryColor);
+  color: var(--secondaryColor);
+  border-radius: 4px;
+}
